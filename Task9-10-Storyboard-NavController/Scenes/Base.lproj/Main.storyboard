@@ -204,6 +204,9 @@
                                             <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
                                             <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="C5P-Iu-fQk" kind="presentation" identifier="MargharittaSegue" id="Hlc-KM-ehb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Margharitta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-5s-coR">
                                         <rect key="frame" x="163" y="66" width="147.66666666666663" height="24"/>
@@ -247,6 +250,9 @@
                                             <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
                                             <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="C5P-Iu-fQk" kind="presentation" identifier="PepperoniSegue" id="Gv4-r7-8wO"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Pepperoni" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjW-vy-I0l">
                                         <rect key="frame" x="163" y="66" width="147.66666666666663" height="24"/>
@@ -283,6 +289,12 @@
                     <navigationItem key="navigationItem" title="Pizza" largeTitleDisplayMode="always" id="EDB-Zi-Xda">
                         <barButtonItem key="backBarButtonItem" title="  " id="svJ-if-skl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="margharittaImageView" destination="ipc-Yx-EHE" id="1mk-q2-1Ev"/>
+                        <outlet property="margharittaLabel" destination="xAM-5s-coR" id="dbO-i6-Na5"/>
+                        <outlet property="pepperoniImageView" destination="byL-bW-PNF" id="EUM-eO-GK5"/>
+                        <outlet property="pepperoniLabel" destination="WjW-vy-I0l" id="5ee-xr-Qgs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmz-NX-aL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,64 +305,64 @@
             <objects>
                 <viewController id="C5P-Iu-fQk" customClass="PizzaIngredientsViewController" customModule="Task9_10_Storyboard_NavController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ylJ-vb-dcn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ln-TQ-3cx">
-                                <rect key="frame" x="20" y="64" width="353" height="40.666666666666657"/>
+                                <rect key="frame" x="20" y="5" width="353" height="40.666666666666664"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pepperoni" translatesAutoresizingMaskIntoConstraints="NO" id="gip-AB-TQH">
-                                <rect key="frame" x="50" y="124.66666666666669" width="293" height="200"/>
+                                <rect key="frame" x="50" y="65.666666666666686" width="293" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="LWc-LE-1lf"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <integer key="value" value="100"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mozzarella Cheese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-Ei-d9y">
-                                <rect key="frame" x="50" y="423.33333333333331" width="234" height="33.666666666666686"/>
+                                <rect key="frame" x="50" y="364.33333333333331" width="234" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-RI-ycm">
-                                <rect key="frame" x="294" y="424.66666666666669" width="51" height="31"/>
+                                <rect key="frame" x="294" y="365.66666666666669" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTI-9J-cM0">
-                                <rect key="frame" x="50" y="484.33333333333331" width="234" height="33.666666666666686"/>
+                                <rect key="frame" x="50" y="425.33333333333331" width="234" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N82-xX-wd2">
-                                <rect key="frame" x="294" y="485.66666666666669" width="51" height="31.000000000000057"/>
+                                <rect key="frame" x="294" y="426.66666666666669" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mushrooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-g9-Q0H">
-                                <rect key="frame" x="50" y="545.33333333333337" width="234" height="33.666666666666629"/>
+                                <rect key="frame" x="50" y="486.33333333333331" width="234" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emT-iJ-oxI">
-                                <rect key="frame" x="294" y="546.66666666666663" width="51" height="31"/>
+                                <rect key="frame" x="294" y="487.66666666666669" width="51" height="31.000000000000057"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-cG-cER">
-                                <rect key="frame" x="50" y="606.33333333333337" width="234" height="33.666666666666629"/>
+                                <rect key="frame" x="50" y="547.33333333333337" width="234" height="33.666666666666629"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02T-rL-3pw">
-                                <rect key="frame" x="294" y="607.66666666666663" width="51" height="31"/>
+                                <rect key="frame" x="294" y="548.66666666666663" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZJ-za-C3I">
-                                <rect key="frame" x="80" y="752" width="233" height="50"/>
+                                <rect key="frame" x="80" y="742" width="233" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ruj-Mv-EMF"/>
                                 </constraints>
@@ -394,6 +406,10 @@
                             <constraint firstItem="Rhn-Ei-d9y" firstAttribute="centerY" secondItem="mFJ-RI-ycm" secondAttribute="centerY" id="zfH-jm-eQR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pizzaImage" destination="gip-AB-TQH" id="7Aj-jS-wB3"/>
+                        <outlet property="pizzaTitle" destination="1ln-TQ-3cx" id="gij-yT-Ezk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jw7-Nc-sf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,6 +434,9 @@
             <point key="canvasLocation" x="174.80916030534351" y="-56.338028169014088"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gv4-r7-8wO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Margherita" width="200" height="200"/>
         <image name="Pepperoni" width="166.66667175292969" height="125"/>

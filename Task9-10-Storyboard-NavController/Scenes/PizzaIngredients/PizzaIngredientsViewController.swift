@@ -7,4 +7,16 @@
 
 import UIKit
 
-class PizzaIngredientsViewController: UIViewController {}
+class PizzaIngredientsViewController: UIViewController {
+    @IBOutlet private weak var pizzaImage: UIImageView?
+    @IBOutlet private weak var pizzaTitle: UILabel?
+    var image: UIImage?
+    var pizzaName: String?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        pizzaImage?.image = image
+        pizzaTitle?.text = pizzaName
+    }
+}
