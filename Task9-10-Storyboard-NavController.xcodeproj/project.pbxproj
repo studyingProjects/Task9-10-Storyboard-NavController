@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CCCBE202BC9515F000301DB /* PizzaIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCBE1F2BC9515F000301DB /* PizzaIngredientsViewController.swift */; };
 		6CDEBA8B2BC7FCC00051E14F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBA8A2BC7FCC00051E14F /* AppDelegate.swift */; };
 		6CDEBA8D2BC7FCC00051E14F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBA8C2BC7FCC00051E14F /* SceneDelegate.swift */; };
 		6CDEBA8F2BC7FCC00051E14F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBA8E2BC7FCC00051E14F /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CCCBE1F2BC9515F000301DB /* PizzaIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientsViewController.swift; sourceTree = "<group>"; };
 		6CDEBA872BC7FCC00051E14F /* Task9-10-Storyboard-NavController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task9-10-Storyboard-NavController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDEBA8A2BC7FCC00051E14F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CDEBA8C2BC7FCC00051E14F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CCCBE1E2BC95108000301DB /* PizzaIngredients */ = {
+			isa = PBXGroup;
+			children = (
+				6CCCBE1F2BC9515F000301DB /* PizzaIngredientsViewController.swift */,
+			);
+			path = PizzaIngredients;
+			sourceTree = "<group>";
+		};
 		6CDEBA7E2BC7FCC00051E14F = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				6CDEBAA32BC7FE370051E14F /* FoodList */,
 				6CDEBAA42BC7FE3D0051E14F /* PizzaList */,
 				6CDEBAA52BC7FE400051E14F /* Payment */,
+				6CCCBE1E2BC95108000301DB /* PizzaIngredients */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 				6CDEBA8B2BC7FCC00051E14F /* AppDelegate.swift in Sources */,
 				6CDEBA8D2BC7FCC00051E14F /* SceneDelegate.swift in Sources */,
 				6CDEBAAC2BC8064C0051E14F /* UnderlinedTextField.swift in Sources */,
+				6CCCBE202BC9515F000301DB /* PizzaIngredientsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
