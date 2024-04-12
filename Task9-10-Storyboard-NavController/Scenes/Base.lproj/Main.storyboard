@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -131,6 +132,9 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kav-Fq-Chf" kind="show" id="vQg-Nc-xAe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vx-f2-SPC">
                                 <rect key="frame" x="50" y="273" width="293" height="100"/>
@@ -162,11 +166,127 @@
                             <constraint firstItem="RB0-Pq-FUf" firstAttribute="top" secondItem="iTt-ua-dlT" secondAttribute="top" constant="50" id="nci-Vr-npf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Food" id="LB3-Zf-CX4"/>
+                    <navigationItem key="navigationItem" title="Food" id="LB3-Zf-CX4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vpp-pM-5p1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tV-ta-QpP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1924" y="-56"/>
+        </scene>
+        <!--Pizza-->
+        <scene sceneID="AHg-Cm-uI0">
+            <objects>
+                <viewController id="kav-Fq-Chf" customClass="PizzaListViewController" customModule="Task9_10_Storyboard_NavController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="390-yN-tI1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-xM-Adr">
+                                <rect key="frame" x="20" y="153" width="353" height="156"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Margherita" translatesAutoresizingMaskIntoConstraints="NO" id="ipc-Yx-EHE">
+                                        <rect key="frame" x="8" y="13" width="150" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="2D9-vw-tFj"/>
+                                            <constraint firstAttribute="height" constant="130" id="vFr-JI-fxZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-EC-bkT">
+                                        <rect key="frame" x="315.66666666666669" y="60.666666666666657" width="34.333333333333314" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Margharitta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-5s-coR">
+                                        <rect key="frame" x="163" y="66" width="147.66666666666663" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="xAM-5s-coR" firstAttribute="leading" secondItem="ipc-Yx-EHE" secondAttribute="trailing" constant="5" id="7hz-AS-C5J"/>
+                                    <constraint firstItem="ipc-Yx-EHE" firstAttribute="centerY" secondItem="8BN-xM-Adr" secondAttribute="centerY" id="8lQ-mZ-iqx"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="ipc-Yx-EHE" secondAttribute="bottom" constant="5" id="C5N-lx-lGT"/>
+                                    <constraint firstItem="xAM-5s-coR" firstAttribute="centerY" secondItem="8BN-xM-Adr" secondAttribute="centerY" id="G8B-84-nZD"/>
+                                    <constraint firstItem="ipc-Yx-EHE" firstAttribute="top" secondItem="8BN-xM-Adr" secondAttribute="topMargin" constant="5" id="fEB-7a-cqO"/>
+                                    <constraint firstItem="3ry-EC-bkT" firstAttribute="leading" secondItem="xAM-5s-coR" secondAttribute="trailing" constant="5" id="k98-o2-43G"/>
+                                    <constraint firstItem="3ry-EC-bkT" firstAttribute="trailing" secondItem="8BN-xM-Adr" secondAttribute="trailingMargin" constant="5" id="kr9-Nv-hB4"/>
+                                    <constraint firstItem="ipc-Yx-EHE" firstAttribute="leading" secondItem="8BN-xM-Adr" secondAttribute="leadingMargin" id="uNn-Sz-QVV"/>
+                                    <constraint firstItem="3ry-EC-bkT" firstAttribute="centerY" secondItem="8BN-xM-Adr" secondAttribute="centerY" id="zui-om-t01"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgM-zs-E3u">
+                                <rect key="frame" x="20" y="329" width="353" height="156"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pepperoni" translatesAutoresizingMaskIntoConstraints="NO" id="byL-bW-PNF">
+                                        <rect key="frame" x="8" y="13" width="150" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="bd4-v1-dpv"/>
+                                            <constraint firstAttribute="height" constant="130" id="p2k-R7-Ape"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-EG-KPX">
+                                        <rect key="frame" x="315.66666666666669" y="60.666666666666686" width="34.333333333333314" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                            <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Pepperoni" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjW-vy-I0l">
+                                        <rect key="frame" x="163" y="66" width="147.66666666666663" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="WjW-vy-I0l" firstAttribute="centerY" secondItem="TgM-zs-E3u" secondAttribute="centerY" id="3is-G3-L1b"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="byL-bW-PNF" secondAttribute="bottom" constant="5" id="ICb-Pr-Mdj"/>
+                                    <constraint firstItem="byL-bW-PNF" firstAttribute="leading" secondItem="TgM-zs-E3u" secondAttribute="leadingMargin" id="Nit-sR-11k"/>
+                                    <constraint firstItem="tDB-EG-KPX" firstAttribute="centerY" secondItem="TgM-zs-E3u" secondAttribute="centerY" id="SRg-tf-JIr"/>
+                                    <constraint firstItem="tDB-EG-KPX" firstAttribute="leading" secondItem="WjW-vy-I0l" secondAttribute="trailing" constant="5" id="YHf-Y8-KD7"/>
+                                    <constraint firstItem="WjW-vy-I0l" firstAttribute="leading" secondItem="byL-bW-PNF" secondAttribute="trailing" constant="5" id="doO-gt-rUt"/>
+                                    <constraint firstItem="byL-bW-PNF" firstAttribute="top" secondItem="TgM-zs-E3u" secondAttribute="topMargin" constant="5" id="kXM-SB-LsM"/>
+                                    <constraint firstItem="tDB-EG-KPX" firstAttribute="trailing" secondItem="TgM-zs-E3u" secondAttribute="trailingMargin" constant="5" id="nwN-2S-SBx"/>
+                                    <constraint firstItem="byL-bW-PNF" firstAttribute="centerY" secondItem="TgM-zs-E3u" secondAttribute="centerY" id="vel-ed-qhj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YLS-RE-cqA"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="YLS-RE-cqA" firstAttribute="trailing" secondItem="TgM-zs-E3u" secondAttribute="trailing" constant="20" id="4ZW-M9-g7X"/>
+                            <constraint firstItem="YLS-RE-cqA" firstAttribute="trailing" secondItem="8BN-xM-Adr" secondAttribute="trailing" constant="20" id="5ib-Cw-Rl3"/>
+                            <constraint firstItem="8BN-xM-Adr" firstAttribute="top" secondItem="YLS-RE-cqA" secondAttribute="top" constant="50" id="A59-vQ-nvB"/>
+                            <constraint firstItem="8BN-xM-Adr" firstAttribute="leading" secondItem="YLS-RE-cqA" secondAttribute="leading" constant="20" id="I6f-tp-DbG"/>
+                            <constraint firstItem="TgM-zs-E3u" firstAttribute="leading" secondItem="YLS-RE-cqA" secondAttribute="leading" constant="20" id="a5O-Hh-d9X"/>
+                            <constraint firstItem="TgM-zs-E3u" firstAttribute="top" secondItem="8BN-xM-Adr" secondAttribute="bottom" constant="20" id="dUh-Om-5Zh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pizza" largeTitleDisplayMode="always" id="EDB-Zi-Xda">
+                        <barButtonItem key="backBarButtonItem" title="  " id="svJ-if-skl"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nmz-NX-aL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2638.9312977099235" y="-56.338028169014088"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rlo-Of-80s">
@@ -188,21 +308,30 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Margherita" width="200" height="200"/>
+        <image name="Pepperoni" width="166.66667175292969" height="125"/>
         <image name="cloud.fill" catalog="system" width="128" height="87"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

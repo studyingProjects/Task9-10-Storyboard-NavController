@@ -16,6 +16,7 @@
 		6CDEBAA72BC7FF830051E14F /* task.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6CDEBAA62BC7FF830051E14F /* task.rtf */; };
 		6CDEBAAC2BC8064C0051E14F /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBAAB2BC8064C0051E14F /* UnderlinedTextField.swift */; };
 		6CDEBAAE2BC810A40051E14F /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBAAD2BC810A40051E14F /* FoodListViewController.swift */; };
+		6CDEBAB02BC815480051E14F /* PizzaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEBAAF2BC815480051E14F /* PizzaListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6CDEBAA62BC7FF830051E14F /* task.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = task.rtf; sourceTree = "<group>"; };
 		6CDEBAAB2BC8064C0051E14F /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		6CDEBAAD2BC810A40051E14F /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		6CDEBAAF2BC815480051E14F /* PizzaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		6CDEBAA42BC7FE3D0051E14F /* PizzaList */ = {
 			isa = PBXGroup;
 			children = (
+				6CDEBAAF2BC815480051E14F /* PizzaListViewController.swift */,
 			);
 			path = PizzaList;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDEBA8F2BC7FCC00051E14F /* ViewController.swift in Sources */,
+				6CDEBAB02BC815480051E14F /* PizzaListViewController.swift in Sources */,
 				6CDEBAAE2BC810A40051E14F /* FoodListViewController.swift in Sources */,
 				6CDEBA8B2BC7FCC00051E14F /* AppDelegate.swift in Sources */,
 				6CDEBA8D2BC7FCC00051E14F /* SceneDelegate.swift in Sources */,
